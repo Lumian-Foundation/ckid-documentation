@@ -67,7 +67,7 @@ For *addr-type-identifier* of 0x0001, the CKID is identical to the 20 Byte check
 
 # Integration with TLS
 
-The CKID can be derived after a TLS handshake.  TLS is a commonly used protocol to secure communications over public networks and is required by technical standards such as IEEE 2030.5.  This is the procedure a cloud server could use to get information on a client during a client request:
+The CKID can be derived after a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) handshake.  TLS is a commonly used protocol to secure communications over public networks and is required by technical standards such as IEEE 2030.5.  This is the procedure a cloud server could use to get information on a client during a client request:
 
 * Enforce mutual authentication TLS on a connection request.
 * Obtain the client’s X.509 certificate once the TLS handshake completes.
